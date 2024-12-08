@@ -1,5 +1,6 @@
 import os
 import subprocess
+import readline  # Import readline for command history
 
 def simple_shell():
     while True:
@@ -10,6 +11,9 @@ def simple_shell():
         if command.lower() in ['exit', 'quit']:
             print("Exiting shell.")
             break
+
+        # Add the command to history
+        readline.add_history(command)
 
         # Execute the command
         try:
