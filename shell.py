@@ -1,18 +1,18 @@
 import os
 import subprocess
-import readline  # Import readline for command history
+import readline
 
 def simple_shell():
     while True:
         # Display a prompt
         command = input("Hello Denis:) ")
 
-        # Exit the shell if the user types 'exit'
+        # Exit the shell when you type 'exit'
         if command.lower() in ['exit', 'quit']:
             print("Exiting shell.")
             break
 
-        # Add the command to history
+        # Adds the command to history
         readline.add_history(command)
 
         # Execute the command
