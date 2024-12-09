@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import os
 import subprocess
 import readline
@@ -9,7 +10,7 @@ def simple_shell():
 
         # Exit the shell when you type 'exit'
         if command.lower() in ['exit', 'quit']:
-            print("Exiting shell.")
+            print("Goodbye Denis ;)")
             break
 
         # Adds the command to history
